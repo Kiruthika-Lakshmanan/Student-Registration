@@ -1,0 +1,49 @@
+
+<center><h3>LOGIN FORM</h3></center>
+<hr/>
+<center>
+    <span style="color: green;">{SUCCESS_MESSAGE}</span>
+    <form  method="POST" > 
+        <table>
+            <tr>
+                <td>USER NAME</td>
+                <td><input type="text" value="{EMAIL}" name="userName" />
+                </td>
+            </tr>
+
+            <tr>
+                <td>PASSWORD</td>
+                <td><input type="password" value="{PASSWORD}" name="password"/>
+
+                </td>
+            </tr>
+            
+             <tr>
+                <td>
+                    <input type="submit" value="login" name="login" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>            
+                    <span class="text">Not Registered?</span> <a href="http://www.student.local/?module=login&act=register" class="link"><span class="text-black">Create an account</span></a>
+                </td>
+            </tr>  
+            <tr>
+                <td>            
+                    <span class="text">Forgot Your Password</span> <a href="http://www.student.local/?module=login&act=forget" class="link"><span class="text-black">Forgot Password</span></a>
+                </td>
+            </tr> 
+            <tr>
+                <td>            
+                    <span style="color: red"> {ERROR_MESSAGE} </span> 
+                </td>
+            </tr> 
+             <tr>
+                <td>            
+                    <span style="color: green"> {LOGIN_SUCCESS} </span> 
+                </td>
+            </tr> 
+        </table>            
+</form>
+</center>

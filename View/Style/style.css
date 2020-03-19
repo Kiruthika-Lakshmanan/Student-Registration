@@ -1,0 +1,9 @@
+  body {
+        
+        margin: 0px auto;
+        background-color:lightpink;
+    }
+   
+    .required{
+       color:red;
+    }

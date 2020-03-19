@@ -1,0 +1,124 @@
+<center><h3>STUDENT REGISTRATION FORM</h3></center>
+<hr/>
+<center>
+    <form  method="POST" > 
+        <table>
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" value="{FIRST_NAME}" name="firstName" /><span class="required">*{ERROR_MESSAGE}</span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" value="{LAST_NAME}" name="lastName"/><span class="required">*{ERROR_MESSAGE}</span>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>DATE OF BIRTH</td>
+                <td><input type="text"  value="{DATE_OF_BIRTH}" name="dob"/>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="text" value="{EMAIL}" name="emailId"/><span class="required">*{ERROR_MESSAGE}</span>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Enter a new username for your account</td>
+                <td><input type="text" value="{USER_NAME}" name="userName"/>
+                </td>
+            </tr>
+            <tr>
+                <td>Enter a new password for your account</td>
+                <td><input type="password" value="{PASSWORD}" name="password"/>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td>
+                    <input type="text" value="{PHONE}" name="mobileNumber" />
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>GENDER</td>
+                <td>
+                    <select class="input-box" value="{GENDER}" name="gender">
+                <option>Select...</option>
+                <!-- BEGIN show_gender -->
+                <option value="{GENDER_ID}" {GENDER_SELECTED}>{GENDER_NAME}</option>
+                <!-- END show_gender -->
+            </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>ADDRESS </td>
+                <td><input type="text" value="{ADDRESS}" name="address"/></td>
+            </tr>
+
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" value="{CITY}" name="city"/>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>PIN CODE</td>
+                <td><input type="text" value="{PINCODE}" name="pinCode"/>
+
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" value="{COUNTRY}" name="country"/></td>
+            </tr>
+
+
+            <tr>
+                <td>HOBBIES</td>
+                <td><input type="text" value="{HOBBIES}" name="hobbies"/></td>
+            </tr>  
+
+
+            <td>COURSES<br />APPLIED FOR</td>
+            <td>
+                  <select class="input-box" value="{COURSE}" name="courses">
+                <option>Select...</option>
+                <!-- BEGIN show_courses -->
+                <option value="{COURSE_ID}" {COURSE_SELECTED}>{COURSE_NAME}</option>
+                <!-- END show_courses -->
+            </select>
+            </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="submit" value="submit" name="submit" />
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="reset" name="reset">
+                </td>
+            </tr>
+        </table>
+
+</center>
+</form>
